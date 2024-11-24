@@ -1,8 +1,8 @@
 import java.util.Date;
 
 public class Manager extends Employee{
-    public Manager(String name, String surname, Date birthday, int salary) {
-        super(name, surname, birthday, salary);
+    public Manager(String name, String surname, Date birthday, Gender gender, int salary) {
+        super(name, surname, birthday, gender, salary);
     }
 
     /**

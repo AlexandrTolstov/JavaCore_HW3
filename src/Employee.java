@@ -3,10 +3,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.Date;
 
-public class Employee {
-    private String name;
-    private String surname;
-    private Date birthday;
+public class Employee extends Man{
     private int salary;
 
     public int getSalary() {
@@ -17,10 +14,8 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Employee(String name, String surname, Date birthday, int salary) {
-        this.name = name;
-        this.surname = surname;
-        this.birthday = birthday;
+    public Employee(String name, String surname, Date birthday, Gender gender, int salary) {
+        super(name, surname, birthday, gender);
         this.salary = salary;
     }
 
